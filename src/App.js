@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 
+
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
@@ -9,6 +10,11 @@ import Details from "./components/Details";
 import Cart from "./components/Cart";
 import Default from "./components/Default";
 import Modal from "./components/Modal";
+
+import view from "./views/Home";
+import ImageInput from './views/ImageInput';
+import VideoInput from './views/VideoInput';
+
 class App extends Component {
   render() {
     return (
@@ -18,6 +24,12 @@ class App extends Component {
           <Route exact path="/" component={ProductList} />
           <Route path="/details" component={Details} />
           <Route path="/cart" component={Cart} />
+          
+          
+          <Route path ="/view" component={view}/>
+          <Route path ="/photo" component={ImageInput} />
+          <Route path ="/camera" component={VideoInput} />
+
           <Route component={Default} />
         </Switch>
         <Modal />

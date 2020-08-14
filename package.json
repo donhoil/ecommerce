@@ -5,9 +5,12 @@
   "dependencies": {
     "@nomoreanalog/react-scripts-eslintless": "2.1.10",
     "bootstrap": "^4.4.1",
+    "face-api.js": "^0.22.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-paypal-express-checkout": "^1.0.5",
     "react-router-dom": "^5.1.2",
+    "react-webcam": "^5.0.1",
     "styled-components": "^5.1.0"
   },
   "scripts": {

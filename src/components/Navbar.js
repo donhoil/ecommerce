@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../logo.svg";
 import styled from "styled-components";
 import { ButtonContainer } from "./Button";
+import { ProductConsumer } from "../context";
 
 export default class Navbar extends Component {
   render() {
@@ -21,12 +22,18 @@ https://www.iconfinder.com/Makoto_msk */}
             </Link>
           </li>
         </ul>
+
+        <Link to="/view" classname="ml-auto">
+          view
+        </Link>
+        
         <Link to="/cart" className="ml-auto">
-          <ButtonContainer>
+          <ButtonContainer >
             <span className="mr-2">
               <i className="fas fa-cart-plus" />
             </span>
             my cart
+           
           </ButtonContainer>
         </Link>
       </NavWrapper>
